@@ -4,10 +4,10 @@ def get_config():
     config = config_dict.ConfigDict()
 
     # tokenizers 
-    config.tokenizer_path='/path/to/your/model'      # to be set
+    config.tokenizer_path='meta-llama/Llama-2-7b-hf'      # to be set
     config.tokenizer_kwarg={"use_fast": False}
     
-    config.model_path='/path/to/your/model'      # to be set
+    config.model_path='meta-llama/Llama-2-7b-hf'      # to be set
     config.model_kwarg={"low_cpu_mem_usage": True, "use_cache": False}
     config.conversation_template='vicuna'
     config.device='cuda:0'
